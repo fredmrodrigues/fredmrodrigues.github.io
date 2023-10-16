@@ -1,0 +1,124 @@
+DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Fala Fred - HTML</title>
+		<link rel="stylesheet" href="estilos.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="https://kit.fontawesome.com/6143e2272e.js" crossorigin="anonymous"></script>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+	</head>
+	<body>
+		<!-- Barra de Menu - Início -->
+		<header class="cabecalho">
+			<a href="index.html"><img src="imagens/logosfmenu.png" width="80" height="40"></a>
+			<nav>
+				<input type="checkbox" id="menuToggle">
+				<label for="menuToggle" class="menu-icon">
+					<i class="fa fa-bars"></i>
+					<i class="fa fa-times-circle"></i>
+				</label>
+				<ul class="menu">
+					<li class="separadores">|</li>
+					<li><a href="perfil.html" class="text-white">Perfil</a></li>
+					<li class="separadores">|</li>
+					<li><a href="projetos.html" class="text-white">Projetos</a></li>
+					<li class="separadores">|</li>
+					<li><a href="experiencia.html" class="text-white">Experiência</a></li>
+					<li class="separadores">|</li>
+					<li><a href="repgithub.html" class="text-white">Repositórios HitHub</a></li>
+					<li class="separadores">|</li>
+					<li><a href="conteudo.html" class="text-white">Conteúdo</a></li>
+					<li class="separadores">|</li>
+				</ul>
+			</nav>
+			<form action="https://www.google.com/webhp?hl=pt-BR&sa=X&ved=0ahUKEwjQp92lh6LzAhWJJbkGHf3uAzMQPAgI" target="_blank" method="submit" class="buscaMenu">
+					<input type="text" name="search" placeholder="Pesquisa" required>
+					<button type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+</svg></button>
+				</form>
+		</header>
+    	<!-- Barra de Menu - Fim -->
+		
+		<!-- Conteúdo da Página: Bootstrap - Início -->
+		<section class="container container mt-4 mb-5">
+			<h3 class="display-4 text-center" id="pgbootstrap"> <lang="en">Bootstrap:</lang> O que é e como usar </h3>
+			<hr class="bg-dark mb-4 w-25">
+			<div class="row">
+				<p><strong><lang="en">Bootstrap</lang></strong> é um framework front-end que fornece estruturas de CSS para a criação de sites e aplicações responsivas de forma rápida e simples. Além disso, pode lidar com sites de desktop e páginas de dispositivos móveis da mesma forma.</p>
+				<p>Originalmente, o <lang="en">Bootstrap</lang> foi desenvolvido para o <b>Twitter</b> por um grupo de desenvolvedores liderados por Mark Otto e Jacob Thornton e se tornou uma das estruturas de <lang="en"><i>front-end</i></lang> e projetos de código aberto mais populares do mundo.</p>
+				<p>Antes de ser uma estrutura de código-fonte aberto, o <lang="en">Bootstrap</lang> era conhecido como <strong><lang="en">Twitter Blueprint</lang></strong>. Após alguns mêses de desenvolvimento, o <lang="en">Twitter</lang> realizou sua primeira <lang="en"><i>Hack Week</i></lang>. O projeto ganhou uma grande popularidade quando desenvolvedores de todos os níveis de habilidade usaram o <lang="en">framework</lang> sem qualquer orientação externa. Após o evento, ele serviu como guia de estilo para o desenvolvimento de ferramentas internas na empresa por mais de um ano antes de seu lançamento se tornar público.</p>
+				<section>
+					<h5>Como o <lang="en">Bootstrap</lang> é distribuído?</h5>
+					<p>O <lang="en">Bootstrap</lang> é distribuído através do seu site oficial: <a href="https://getbootstrap.com" target="_blank">getbootstrap.com</a>. Através do site oficial, é possível acessar o código-fonte por qualquer pessoa, em qualquer lugar.</p>
+				</section>
+				<section>
+					<h2>Instalando o <lang="en">Bootstrap</lang>:</h2>
+					<div class="cssbootstrap">
+						<h5><strong>CSS</strong></h5>
+							<p>Copie e cole o <lang="en">link</lang> de estilo abaixo dentro do &lt;head&gt; do seu arquivo HTML antes de qualquer outro <lang="en">link</lang> de estilo para carregar o CSS do Bootstrap:</p>
+								<code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">link</span> <span class="na">href</span><span class="o">=</span><span class="s">"https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"</span> <span class="na">rel</span><span class="o">=</span><span class="s">"stylesheet"</span> <span class="na">integrity</span><span class="o">=</span><span class="s">"sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"</span> <span class="na">crossorigin</span><span class="o">=</span><span class="s">"anonymous"</span><span class="p">&gt;</span></code>
+					</div>
+					<br><br>
+					<div class="jsbootstrap">
+						<h5><strong>JavaScript</strong></h5>
+							<p>Muitos componentes do <lang="en">Bootstrap</lang> exigem o uso de JavaScript.</p>
+							<p>Coloque <strong>um dos seguintes <code>&lt;script&gt;</code>s </strong> logo acima da linha de fechamento da <lang="en"><i>tag</i></lang> <code>&lt;/body&gt;</code>, para habilitá-los:</p>
+								<code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"</span> <span class="na">integrity</span><span class="o">=</span><span class="s">"sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"</span> <span class="na">crossorigin</span><span class="o">=</span><span class="s">"anonymous"</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span></code>
+								<br><br>
+								<code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"</span> <span class="na">integrity</span><span class="o">=</span><span class="s">"sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN"</span> <span class="na">crossorigin</span><span class="o">=</span><span class="s">"anonymous"</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+								<br><br>
+								<span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"</span> <span class="na">integrity</span><span class="o">=</span><span class="s">"sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/"</span> <span class="na">crossorigin</span><span class="o">=</span><span class="s">"anonymous"</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span></code>
+					</div>
+					<br><br>
+					<div class="testebootstrap">
+						<h5>Modelo inicial</h5>
+							<p>Certifique-se de configurar suas páginas com os mais recentes padrões de design e desenvolvimento. Isso significa usar um doctype HTML5 e incluir uma meta <lang="en"><i>tag viewport</i></lang> para comportamentos responsivos adequados. Junte tudo e sua página deve ficar assim:</p>
+								<code class="language-html" data-lang="html">
+									<span class="cp">&lt;!doctype html&gt;</span><br>
+									<span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">"en"</span><span class="p">&gt;</span><br>
+									<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span><br>
+									<span class="c">&lt;!-- Tags meta necessárias: --&gt;</span><br>
+									<span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">"utf-8"</span><span class="p">&gt;</span><br>
+									<span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">"viewport"</span> <span class="na">content</span><span class="o">=</span><span class="s">"width=device-width, initial-scale=1"</span><span class="p">&gt;</span><br><br>
+									<span class="c">&lt;!-- CSS Bootstrap --&gt;</span><br>
+									<span class="p">&lt;</span><span class="nt">link</span> <span class="na">href</span><span class="o">=</span><span class="s">"https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"</span> <span class="na">rel</span><span class="o">=</span><span class="s">"stylesheet"</span> <span class="na">integrity</span><span class="o">=</span><span class="s">"sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"</span> <span class="na">crossorigin</span><span class="o">=</span><span class="s">"anonymous"</span><span class="p">&gt;</span><br><br>
+									<span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Olá, Mundo!<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span><br>
+									<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span><br>
+									<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span><br>
+									<span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Olá, Mundo!<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span><br><br>
+									<span class="c">&lt;!-- JavaScripts adicionais; escolha um dos dois! --&gt;</span><br><br>
+									<span class="c">&lt;!-- Opção 1: Bootstrap Bundle com Popper --&gt;</span><br>
+									<span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"</span> <span class="na">integrity</span><span class="o">=</span><span class="s">"sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"</span> <span class="na">crossorigin</span><span class="o">=</span><span class="s">"anonymous"</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span><br><br>
+									<span class="c">&lt;!-- Opção 2: Popper separado e JS Bootstrap --&gt;</span><br>
+									<span class="c">&lt;script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"&gt;&lt;/script&gt;</span><br><br>
+									<span class="c">&lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"&gt;&lt;/script&gt;</span><br><br>
+									<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span><br>
+									<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+						</code>
+					</div>
+					<br><br>
+					<p>Visualmente, a página deve aparecer assim:</p>
+					<img src="imagens/olamundo.png" width="600" height="500">
+					<p>Parabéns, <lang="en">Bootstrap</lang>instalado com sucesso!</p>
+					<br><br>
+				</section>
+				<section>
+					<h2 class="documentation" id="ref">Referências</h2>
+					<p><a href="https://getbootstrap.com/docs/5.1/getting-started/introduction/" target="_blank">https://getbootstrap.com/docs/5.1/getting-started/introduction/</a></p>
+				</section>
+			</div>
+		</section>
+		<!-- Conteúdo da Página: Bootstrap - Fim -->
+		
+		 <!-- Rodapé - Início -->
+		<footer class="rodape">
+			<p>
+			© 2021, Copyright - Desenvolvimento de Interfaces Web - <a href="http://icei.pucminas.br" class="text-white" target="_blank">ICEI PUC Minas</a>
+			</p>
+			<img src="imagens/logosfmenu.png" width="80" height="40" id="logoFooter">
+		</footer>
+		<!-- Rodapé - Fim -->
+	</body>
+</html>

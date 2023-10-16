@@ -1,0 +1,81 @@
+DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Fala Fred - HTML</title>
+		<link rel="stylesheet" href="estilos.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="https://kit.fontawesome.com/6143e2272e.js" crossorigin="anonymous"></script>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+	</head>
+	<body>
+		<!-- Barra de Menu - Início -->
+		<header class="cabecalho">
+			<a href="index.html"><img src="imagens/logosfmenu.png" width="80" height="40"></a>
+			<nav>
+				<input type="checkbox" id="menuToggle">
+				<label for="menuToggle" class="menu-icon">
+					<i class="fa fa-bars"></i>
+					<i class="fa fa-times-circle"></i>
+				</label>
+				<ul class="menu">
+					<li class="separadores">|</li>
+					<li><a href="perfil.html" class="text-white">Perfil</a></li>
+					<li class="separadores">|</li>
+					<li><a href="projetos.html" class="text-white">Projetos</a></li>
+					<li class="separadores">|</li>
+					<li><a href="experiencia.html" class="text-white">Experiência</a></li>
+					<li class="separadores">|</li>
+					<li><a href="repgithub.html" class="text-white">Repositórios HitHub</a></li>
+					<li class="separadores">|</li>
+					<li><a href="conteudo.html" class="text-white">Conteúdo</a></li>
+					<li class="separadores">|</li>
+				</ul>
+			</nav>
+			<form action="https://www.google.com/webhp?hl=pt-BR&sa=X&ved=0ahUKEwjQp92lh6LzAhWJJbkGHf3uAzMQPAgI" target="_blank" method="submit" class="buscaMenu">
+					<input type="text" name="search" placeholder="Pesquisa" required>
+					<button type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+</svg></button>
+				</form>
+		</header>
+    	<!-- Barra de Menu - Fim -->
+		
+		<!-- Conteúdo da Página: CSS - Início -->
+		<section class="container container mt-4 mb-5">
+			<h3 class="display-4 text-center" id="pgcss"> CSS: <lang="en">Cascading Style Sheets</lang> </h3>
+			<hr class="bg-dark mb-4 w-25">
+			<div class="row">
+				<p>O <strong>CSS</strong> é uma linguagem de estilo usada para descrever a apresentação de um documento escrito em HTML ou XML, ou seja, é um arquivo que descreve <b>como</b> os elementos são mostrados na tela.</p>
+				<p>CSS é uma das principais linguagens da <lang="en"><i>open web</i></lang> e é padronizada em navagadores <lang="en"><i>web</i></lang> de acordo com as especificações da <a href="https://www.w3.org/Style/CSS/#specs" target="_blank">W3C</a>.</p>
+				<p>Os artigos abaixo podem ajudá-lo a aprender mais sobre HTML:</p>
+				<section>
+					<ul class="topicos1">
+						<li><a href="https://developer.mozilla.org/pt-BR/docs/Learn/CSS/First_steps" target="_blank">Introdução ao CSS</a>
+							<p>Esse módulo inicia com o funcionamento básico do CSS, incluindo seletores e propriedades, como escrever regras CSS, aplicar CSS ao HTML, como especificar comprimento, cor, e outras unidades em CSS, cascata e herança, o básico do modelo de caixas, e depuração de CSS.</p></li>
+						<li><a href="https://developer.mozilla.org/pt-BR/docs/Learn/CSS/Styling_text" target="_blank">Estilização do texto</a>
+							<p>Esse módulo discute os fundamentos da estilização de textos, incluindo a definição de fontes, negritos, itálicos, linhas e espaçamentos de letras, sombras e outras propriedades de textos.</p></li>
+						<li><a href="https://developer.mozilla.org/pt-BR/docs/Learn/CSS/Building_blocks" target="_blank">Estilização de caixas</a>
+							<p>Esse módulo foca na estilização de caixas, um dos passos fundamentais para o <lang="en"><i>layout</i></lang> de uma página <lang="en"><i>web</i></lang>. Nesse módulo, será recapitulado o modelo de caixas, então, abordado o controle do <lang="en"><i>layout</i></lang> das caixas definindo margens, bordas e preenchimento, cores de fundo customizadas, imagens e outras características extravagantes como sombras e filtros em caixas.</p></li>
+						<li><a href="https://developer.mozilla.org/pt-BR/docs/Learn/CSS/CSS_layout" target="_blank">Layout CSS</a>
+							<p>Esse módulo apresenta como estilizar texto e manipular caixas. Também apresenta como posicionar caixas no lugar certo em relação à janela de exibição e um ao outro. Fechando esse módulo, você pode aprofundar no <lang="en"><i>layout</i></lang> do CSS com diferentes configurações de exibição, métodos tradicionais de <lang="en"><i>layout</i></lang> envolvendo <lang="en"><i>float</i></lang> e posicionamento, e modernas ferramentas para <lang="en"><i>layout</i></lang> como <lang="en"><i>flexbox</i></lang>.</p></li>
+					</ul>
+				</section>
+				<section>
+					<h2 class="documentation" id="ref">Referências</h2>
+					<p><a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" target="_blank">https://developer.mozilla.org/pt-BR/docs/Web/CSS</a></p>
+				</section>
+			</div>
+		</section>
+		<!-- Conteúdo da Página: CSS - Fim -->
+		
+		 <!-- Rodapé - Início -->
+		<footer class="rodape">
+			<p>
+			© 2021, Copyright - Desenvolvimento de Interfaces Web - <a href="http://icei.pucminas.br" class="text-white" target="_blank">ICEI PUC Minas</a>
+			</p>
+			<img src="imagens/logosfmenu.png" width="80" height="40" id="logoFooter">
+		</footer>
+		<!-- Rodapé - Fim -->
+	</body>
+</html>

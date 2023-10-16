@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Fala Fred - Página Inicial</title>
+		<link rel="stylesheet" href="estilos.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="https://kit.fontawesome.com/6143e2272e.js" crossorigin="anonymous"></script>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+	</head>
+	<body>
+		<!-- Barra de Menu - Início -->
+		<header class="cabecalho">
+			<a href="index.html"><img src="imagens/logosfmenu.png" width="80" height="40"></a>
+			<nav>
+				<input type="checkbox" id="menuToggle">
+				<label for="menuToggle" class="menu-icon">
+					<i class="fa fa-bars"></i>
+					<i class="fa fa-times-circle"></i>
+				</label>
+				<ul class="menu">
+					<li class="separadores">|</li>
+					<li><a href="perfil.html" class="text-white">Perfil</a></li>
+					<li class="separadores">|</li>
+					<li><a href="projetos.html" class="text-white">Projetos</a></li>
+					<li class="separadores">|</li>
+					<li><a href="experiencia.html" class="text-white">Experiência</a></li>
+					<li class="separadores">|</li>
+					<li><a href="repgithub.html" class="text-white">Repositórios GitHub</a></li>
+					<li class="separadores">|</li>
+					<li><a href="conteudo.html" class="text-white">Conteúdo</a></li>
+					<li class="separadores">|</li>
+				</ul>
+			</nav>
+			<form action="https://www.google.com/webhp?hl=pt-BR&sa=X&ved=0ahUKEwjQp92lh6LzAhWJJbkGHf3uAzMQPAgI" target="_blank" method="submit" class="buscaMenu">
+					<input type="text" name="search" placeholder="Pesquisa" required>
+					<button type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+</svg></button>
+				</form>
+		</header>
+    	<!-- Barra de Menu - Fim -->
+		
+		
+		<!-- Perfil - Início -->
+		<section class="container mb-5" id="index">
+			<div class="row">
+				<div class="col-md-8">
+					<h3 class="display-4">Frederico Martins Rodrigues</h3>
+					<hr class="bg-dark w-25 ml-0">
+					<h5>Objetivo:</h5>
+					<p class="lead">
+						Compartilhar experiências e informações relacionadas à tecnologia para construir um mundo melhor.
+					</p>
+					<p>
+						"Eu acredito que a tecnologia tem o poder de tornar o mundo melhor, pois o futuro que tanto foi mencionado no século XX já está presente em nossas vidas e temos que saber lidar com esse 'futuro' para melhorar, agregar, e não corromper ou destruir o nosso planeta."
+					</p>
+					<ul class="list-unstyled pl-4">
+						<li><i class="fa fa-check"></i> O futuro está presente!</li>
+						<li><i class="fa fa-check"></i> O futuro é agora!</li>
+						<li><i class="fa fa-check"></i> O futuro é hoje!</li>
+					</ul>
+					<a href="https://www.facebook.com/fred.martinz/" target="_blank"><i class="fa fa-facebook mr-lg-4 fa-2x" id="socialIc"> </i></a>
+					<a href="https://twitter.com/codesticid" target="_blank"><i class="fa fa-twitter mr-lg-4 fa-2x" id="socialIc"> </i></a>
+					<a href="https://www.linkedin.com/in/frederico-martins-rodrigues-07b009121/" target="_blank"><i class="fa fa-linkedin mr-lg-4 fa-2x" id="socialIc"> </i></a>
+                    <a href="https://www.instagram.com/frederico.m.rodrigues/" target="_blank"><i class="fa fa-instagram mr-lg-4 fa-2x" id="socialIc"> </i></a>
+					<a href="perfil.html" target="_blank" class="btn btn-primary rounded-0 mb-2" id="btnperfil">+ Perfil completo</a>
+				</div>
+				<div class="col-md-4 mt-5">
+					<img id="perfil" class="card-img-top" src="imagens/perfil.png" alt="Perfil - Frederico">
+				</div>
+			</div>
+    	</section>
+		<!-- Perfil - Fim -->
+		
+		
+		
+		<!-- Projetos - Início -->
+		<section class="container container mt-4 mb-5" id="projetos">
+			<h3 class="display-4 text-center"> Projetos </h3>
+			<hr class="bg-dark mb-4 w-25">
+			<div class="row">
+				<div class="col-md-3">
+					<div class="card">
+						<img class="card-img-top" src="imagens/htmllogo.jpg" alt="Card image cap" width="300" height="200">
+						<div class="card-block p-3">
+							<h4 class="card-title">HTML</h4>
+							<p class="card-text">O arquivo que cria conteúdo para a <lang="en">Web.</lang></p>
+							<br>
+							<a href="pghtml.html" class="btn btn-outline-primary rounded-0">+ Leia mais</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="card">
+						<img class="card-img-top" src="imagens/csslogo.png" alt="Card image cap" width="300" height="200">
+						<div class="card-block p-3">
+							<h4 class="card-title">CSS</h4>
+							<p class="card-text">O arquivo capaz de moldar a interface com o visual atrativo para o usuário.</p>
+							<br>
+							<a href="pgcss.html" class="btn btn-outline-primary rounded-0">+ Leia mais</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="card">
+						<img class="card-img-top" src="imagens/bootstraplogo.png" alt="Card image cap" width="300" height="200">
+						<div class="card-block p-3">
+							<h4 class="card-title">BOOTSTRAP</h4>
+							<p class="card-text">O <lang="en"><strong>Framework</strong> front-end</lang> mais famoso do mundo.</p>
+							<br>
+							<a href="pgbootstrap.html" class="btn btn-outline-primary rounded-0">+ Leia mais</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="card">
+						<img class="card-img-top" src="imagens/automacao.png" alt="Card image cap" width="300" height="200">
+						<div class="card-block p-3">
+							<h4 class="card-title">AUTOMAÇÃO</h4>
+							<p class="card-text">O que é e para que serve?</p>
+							<br><br>
+							<a href="pgautomacao.html" class="btn btn-outline-primary rounded-0">+ Leia mais</a>
+						</div>
+					</div>
+				</div>
+				<p>
+					<a href="projetos.html" target="_blank" class="btn btn-primary rounded-0 mb-2" id="btnMaisProj">+ Mais projetos</a>
+				</p>
+			</div>
+		</section>
+		<!-- Projetos - Fim -->
+		
+		
+		
+		<!-- Experiência - Início -->
+		<section class="container container mt-4 mb-5" id="experiencia">
+			<h3 class="display-4 text-center"> Experiência </h3>
+			<hr class="bg-dark mb-4 w-25">
+			<div class="row">
+				<div class="col-sm-3">
+					<div class="cardImg">
+						<img class="card-img-left" src="imagens/estbrlogo.png" alt="Card image cap" width="250" height="250">
+					</div>
+				</div>
+				<div class="col-lg-6" id="descrFuncao">
+					<div class="cardTxt">
+						<h4 class="titulo">Estação Brasil</h4>
+							<p class="texto">Atuei como assistente administrativo dando suporte para a equipe de vendas. Também fazia parte da minha função identificar e corrigir erros simples do sistema integrado da empresa, conferir estoque físico x estoque do sistema e caso fosse identificada alguma anomalia, corrigí-la, aperfeiçoar funcionalidades do sistema, gerir o banco de dados e rotinas relacionadas ao departamento pessoal, como cálculo de folha de pagamento, admissão, rescisão , cálculo de férias e benefícios.<br>Foi uma oportunidade para aprimorar meus conhecimentos e colocar em prática o que eu já trazia de bagagem de conhecimento em minha jornada profissional.</p>
+							<h6 class="periodo">2018 a 2020</h6>
+					</div>
+				</div>
+			</div>
+			<hr class="bg-dark mb-4 w-25">
+			<div class="row">
+				<div class="col-sm-3">
+					<div class="cardImg">
+						<img class="card-img-left" src="imagens/n1logo.png" alt="Card image cap" width="250" height="250">
+					</div>
+				</div>
+				<div class="col-lg-6" id="descrFuncao">
+					<div class="cardTxt">
+						<h4 class="titulo">Number One</h4>
+							<p class="texto">Atuei como consultor de vendas, fazendo prospecção de clientes, elaborando rotas através do aplicativo GeoFusion, viajando pelo Brasil em busca de parcerias com potenciais clientes.<br>Visitava franqueados da rede prestando serviços de consultoria, identificando gargalos e propondo melhorias visando o sucesso dos novos e antigos franqueados.</p>
+							<h6 class="periodo">2016 a 2017</h6>
+					</div>
+				</div>
+			</div>
+			<hr class="bg-dark mb-4 w-25">
+			<div class="row">
+				<div class="col-sm-3">
+					<div class="cardImg">
+						<img class="card-img-left" src="imagens/pamplonalogo.png" alt="Card image cap" width="250" height="250">
+					</div>
+				</div>
+				<div class="col-lg-6" id="descrFuncao">
+					<div class="cardTxt">
+						<h4 class="titulo">Pamplona</h4>
+							<p class="texto">Atuei como assistente de vendas de mercado interno II, dando suporte aos clientes no pós-vendas. Fazia o controle do estoque, lançando no sistema os pedidos e dando baixa nos produtos entregues, solicitando à matriz o envio de produtos para manter a filial com o estoque sempre disponível para venda, tendo o cuidado para não deixar produtos em excesso serem enviados para a filial, evitando desperdicio, uma vez que a empresa tem como produtos principais carnes e embutidos, com validade curta.</p>
+							<h6 class="periodo">2015 a 2016</h6>
+					</div>
+				</div>
+			</div>
+			<hr class="bg-dark mb-4 w-25">
+			<div class="row">
+				<div class="col-sm-3">
+					<div class="cardImg">
+						<img class="card-img-left" src="imagens/isjblogo.png" alt="Card image cap" width="250" height="250">
+					</div>
+				</div>
+				<div class="col-lg-6" id="descrFuncao">
+					<div class="cardTxt">
+						<h4 class="titulo">Inspetoria São João Bosco</h4>
+							<p class="texto">Atuei como assistente administrativo no setor de departamento pessoal. Era responsável por toda a rotina de departamento pessoal, como cálculo de folhas de pagamento, admissão, rescisão, cálculo de férias e benefícios para os colaboradores e jovens aprendizes da empresa.</p>
+							<h6 class="periodo">2013 a 2015</h6>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Experiência - Fim -->
+		
+		
+		
+		<!-- Repositórios GitHub - Início -->
+		<section class="repoGit">
+			<div class="container pt-5 pb-2">
+					<div class="row">
+
+						<h2 class="repositorio">Repositórios GitHub</h2>
+
+						<div class="col-md-3 col-lg-3 col-xl-3 mx-auto">
+							<h4>Vila Homestay</h4>
+							<hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
+							<p>Este repositório foi criado no primeiro semestre de 2021 para a disciplina de Trabalho Interdisciplinar II.<br>O grupo propõe uma solução para simplificar a rotina de um condomínio através de uma aplicação.</p>
+							<p><svg id="iconePasta" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-folder2" viewBox="0 0 16 16">
+	  <path d="M1 3.5A1.5 1.5 0 0 1 2.5 2h2.764c.958 0 1.76.56 2.311 1.184C7.985 3.648 8.48 4 9 4h4.5A1.5 1.5 0 0 1 15 5.5v7a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 1 12.5v-9zM2.5 3a.5.5 0 0 0-.5.5V6h12v-.5a.5.5 0 0 0-.5-.5H9c-.964 0-1.71-.629-2.174-1.154C6.374 3.334 5.82 3 5.264 3H2.5zM14 7H2v5.5a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 .5-.5V7z"/>
+	</svg><a href="https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2021-2-ti2-0924100-condominio" class="text-white" style="text-decoration: none" target="_blank">Ir para repositório</a></p>
+						</div>
+
+						<div class="col-md-3 col-lg-3 col-xl-3 mx-auto">
+							<h4>AED II</h4>
+							<hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
+							<p>Repositório de códigos da disciplina de Algoritmos e Estruturas de Dados II do curso de Engenharia de Software - PUC Minas.</p>
+							<p><svg id="iconePasta" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-folder2" viewBox="0 0 16 16">
+	  <path d="M1 3.5A1.5 1.5 0 0 1 2.5 2h2.764c.958 0 1.76.56 2.311 1.184C7.985 3.648 8.48 4 9 4h4.5A1.5 1.5 0 0 1 15 5.5v7a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 1 12.5v-9zM2.5 3a.5.5 0 0 0-.5.5V6h12v-.5a.5.5 0 0 0-.5-.5H9c-.964 0-1.71-.629-2.174-1.154C6.374 3.334 5.82 3 5.264 3H2.5zM14 7H2v5.5a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 .5-.5V7z"/>
+	</svg><a href="https://github.com/icei-pucminas/aeds2" class="text-white" style="text-decoration: none" target="_blank">Ir para repositório</a></p>
+						</div>
+
+						<div class="col-md-3 col-lg-3 col-xl-3 mx-auto">
+							<h4>Seek'n Hire</h4>
+							<hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
+							<p>Este repositório foi criado no segundo semestre de 2020 para a disciplina de Trabalho Interdisciplinar II.<br>O grupo propõe uma solução para linkar pessoas que necessitam de serviços específicos aos profissionais capacitados a realizá-los.</p>
+							<p><svg id="iconePasta" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-folder2" viewBox="0 0 16 16">
+	  <path d="M1 3.5A1.5 1.5 0 0 1 2.5 2h2.764c.958 0 1.76.56 2.311 1.184C7.985 3.648 8.48 4 9 4h4.5A1.5 1.5 0 0 1 15 5.5v7a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 1 12.5v-9zM2.5 3a.5.5 0 0 0-.5.5V6h12v-.5a.5.5 0 0 0-.5-.5H9c-.964 0-1.71-.629-2.174-1.154C6.374 3.334 5.82 3 5.264 3H2.5zM14 7H2v5.5a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 .5-.5V7z"/>
+	</svg><a href="https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2021-1-ti2-0940100-seek-n-hire" class="text-white" style="text-decoration: none" target="_blank">Ir para repositório</a></p>
+						</div>
+				</div>
+			</div>
+		</section>
+		<!-- Repositório GitHub - Fim -->
+		
+		
+		
+		<!-- Recomendação de Conteúdo - Início -->
+		<section id="recConteudo">
+			<div class="container pt-5 pb-2">
+				<div class="row">
+					<h2 class="recomendacao">Recomendação de Conteúdo</h2>
+						<div class="col-md-3 col-lg-3 col-xl-3 mx-auto">
+							<iframe id="video" width="350" height="250" src="https://www.youtube.com/embed/efkO2IdUKR0" title="ICEI Talks - LevelUp FastTrack" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							<h4>ICEI Talks - LevelUp FastTrack 2021/2</h4>
+							<hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
+							<p>Tira dúvidas no ICEI Talks - LevelUp FastTrack do segundo semestre de 2021.</p>
+						</div>
+						<div class="col-md-3 col-lg-3 col-xl-3 mx-auto">
+							<iframe id="video" width="350" height="250" src="https://www.youtube.com/embed/IyJ-HpnR9bY" title="ICEI Talks - Inovação e Saúde Digital" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							<h4>ICEI Talks - novação e Saúde Digital</h4>
+							<hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
+							<p>O impacto da tecnologia em um hospital de grande porte.</p>
+						</div>
+						<div class="col-md-3 col-lg-3 col-xl-3 mx-auto">
+							<iframe id="video" width="350" height="250" src="https://www.youtube.com/embed/-V80B7_7tHs" title="ICEI Talks - Nasa SpaceApps Challenge" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							<h4>ICEI Talks - Nasa SpaceApps Challenge</h4>
+							<hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
+							<p>Você solucionando desafios que podem transformar o mundo.</p>
+						</div>
+							<p>
+								<a href="https://www.youtube.com/c/ICEIPUCMinas/videos" target="_blank" class="btn btn-primary rounded-0 mb-2" id="btnMaisRec">+ Mais recomendações</a>
+							</p>
+				</div>
+			</div>
+		</section>
+		<!-- Recomendação de Conteúdo - Fim -->
+		
+		
+		
+        <!-- Rodapé - Início -->
+		<footer class="rodape">
+			<p>
+			© 2021, Copyright - Desenvolvimento de Interfaces Web - <a href="http://icei.pucminas.br" class="text-white" target="_blank">ICEI PUC Minas</a>
+			</p>
+			<img src="imagens/logosfmenu.png" width="80" height="40" id="logoFooter">
+		</footer>
+		<!-- Rodapé - Fim -->
+	</body>
+</html>

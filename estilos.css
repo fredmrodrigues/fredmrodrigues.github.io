@@ -1,0 +1,357 @@
+/* Definições gerais - Início */
+@charset "UTF-8";
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css');
+html {
+	height: 100%;
+}
+
+body, ul, li, p {
+	margin: 0px;
+	padding: 0px;
+	font-size: 1rem;
+	font-family: arial;
+}
+
+h1 {
+	font-size: 120%;
+	text-align: center;
+}
+/* Definições gerais - Fim */
+
+/* Cabeçalho - Início */
+.cabecalho {
+	background-color: #343a40;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+	position: fixed;
+	width: 100%;
+	top: 0px;
+	z-index: 999;
+}
+
+.cabecalho form {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:space-between;
+	align-items: center;
+	margin-right: 60px;
+}
+
+.cabecalho a {
+	text-decoration: none;
+	color: white;
+}
+
+.menu {
+	display: flex;
+}
+
+.menu li {
+	list-style: none;
+	margin-left: 10px;
+	color: white;
+}
+#menuToggle {
+	display: none;
+}
+.menu-icon {
+	display: none;
+}
+/* Menu mobile - Início */
+@media screen and (max-width: 800px) {
+	.cabecalho {
+		position: fixed;
+		top: 0px;
+		width: 100%;
+	}
+	.cabecalho form {
+		display: none;
+	}
+	.cabecalho nav {
+		display: absolute;
+		width: 100%;
+		height: 100%;
+	}
+	.menu {
+		display: flex;
+		position: fixed;
+		flex-wrap: wrap;
+		align-content: center;
+		top: 0px;
+		left: 0px;
+		width: 100%;
+		height: 0%;
+		background: rgba(0,0,0,0.9);
+		overflow: hidden;
+		webkit-transition: height 0.3s;
+		moz-transition: height 0.3s;
+		o-transition: height 0.3s;
+		transition: height 0.3s;
+	}
+	.menu li {
+		display: block;
+		width: 100%;
+		margin-left: 0px;
+		margin-right: 30px;
+		margin-bottom: 60px;
+	}
+	.menu li a{
+		display: block;
+		text-align: center;
+		width: 100%;
+	}
+	.menu-icon {
+		display: block;
+		color: white;
+		width: 50px;
+		height: inherit;
+		position: absolute;
+		top: 15px;
+		right: 15px;
+		line-height: 60px;
+		z-index: 999;
+	}
+	.menu > .separadores {
+		display: none;
+	}
+	.menu-icon i {
+		font-size: 1.8em;
+	}
+	#menuToggle:checked ~ label i:nth-child(2) {
+		display: block;
+	}
+	#menuToggle:checked ~ label i:first-child {
+		display: none;
+	}
+	#menuToggle:not(checked) ~ label i:first-child {
+		display:block;
+	}
+	#menuToggle:not(checked) ~ label i:nth-child(2) {
+		display: none;
+	}
+	#menuToggle:checked ~ ul {
+		height: 100%;
+	}
+}
+/* Menu mobile - Fim */
+.buscaMenu > input {
+	border-radius: 3px;
+}
+.buscaMenu > button {
+	border-radius: 3px;
+}
+/* Cabeçalho Fim */
+
+/* Index - Início */
+/* Perfil - Início */
+#index {
+	margin-top: 60px; 
+}
+
+#perfil.card-img-top {
+	border-radius: 12px;
+}
+
+#socialIc {
+	float: left;
+	margin-right: 15px;
+}
+#btnperfil {
+	margin-left: 30px;
+}
+/* Perfil - Fim */
+
+
+/* Projetos - Início */
+.projetos img {
+	max-width: 100%;
+	display: block;
+}
+
+#btnMaisProj {
+	float: right;
+	margin-top: 6px;
+}
+/* Projetos - Fim */
+
+
+/* Experiência - Início */
+.titulo {
+	margin-left: 30px;
+}
+.texto {
+	margin-left: 30px;
+}
+.periodo {
+	margin-left: 30px;
+}
+@media screen and (max-width: 800px) {
+	.titulo{
+		margin-left: -60px;
+	}
+	.texto {
+		margin-left: -60px;
+		display: flex;
+		flex-wrap: wrap;
+		margin-right: 60px;
+	}
+	.periodo {
+		margin-left: -60px;
+	}
+}
+/* Experiência - Fim */
+
+/* Repositórios GitHub - Início */
+.repositorio {
+	padding: 10px;
+	margin-bottom: 30px;
+}
+.repoGit {
+	margin-top: 60px;
+	background: #343a40;
+	color: white;
+}
+
+#pgrepgithub {
+	margin-bottom: 60px;
+}
+#iconePasta {
+	margin-right: 6px;
+	margin-bottom: 6px;
+}
+/* Repositórios GitHub - Fim */
+
+
+/* Recomendação de conteúdo - Início */
+#video {
+	border-radius: 12px;
+}
+.recomendacao {
+	padding: 10px;
+	margin-bottom: 30px;
+}
+#btnMaisRec {
+	float: right;
+}
+/* Recomendação de conteúdo - Fim */
+/* Index - Fim */
+
+
+
+/* Página Perfil - Início */
+#perfil {
+	margin-top: 60px;
+}
+#perfil a {
+	text-decoration: none;
+}
+.citacao {
+	display: block;
+	float: left;
+	width: 400px;
+	border-top: 1px solid #343a40;
+	border-bottom: 1px solid #343a40;
+	padding: 40px 10px 0;
+	font-style: italic;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background: url("imagens/aspas.gif") no-repeat;
+}
+.bandas {
+	text-decoration: none;
+	color: black;
+}
+/* Página Perfil - Fim */
+
+
+/* Página Projetos - Início */
+#pgproj {
+	margin-top: 60px;
+}
+#descrProj {
+	margin-left: 60px;
+}
+/* Página Projetos - Fim */
+
+
+
+/* Página Experiência - Início */
+#pgexperiencia {
+	margin-top: 60px;
+}
+#descrFuncao {
+	margin-left: 60px;
+}
+/* Página Experiência - Fim */
+
+
+
+/* Página Repositórios GitHub - Início */
+#repoGit {
+	margin-top: 60px;
+}
+/* Página Repositórios GitHub - Fim */
+
+
+
+/* Página Recomendação de Conteúdo - Início */
+#pgconteudo {
+	margin-top: 60px;
+}
+#descrVideo {
+	margin-left: 60px;
+}
+/* Página Recomendação de Conteúdo - Fim */
+
+
+
+/* Página HTML - Início */
+#pghtml {
+	margin-top: 60px;
+}
+/* Página HTML - Fim */
+
+
+
+/* Página CSS - Início */
+#pgcss {
+	margin-top: 60px;
+}
+/* Página CSS - Fim */
+
+
+
+/* Página Bootstrap - Início */
+#pgbootstrap {
+	margin-top: 60px;
+}
+/* Página Bootstrap - Fim */
+
+
+
+/* Página Automação - Início */
+#pgautomacao {
+	margin-top: 60px;
+}
+/* Página Automação - Fim */
+
+
+
+/* Rodapé - Início */
+.rodape {
+	background-color: #343a40;
+	color: white;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+}
+.rodape a {
+	text-decoration: none;
+	color: white;
+}
+/* Rodapé - Fim */

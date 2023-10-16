@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Fala Fred - HTML</title>
+		<link rel="stylesheet" href="estilos.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="https://kit.fontawesome.com/6143e2272e.js" crossorigin="anonymous"></script>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+	</head>
+	<body>
+		<!-- Barra de Menu - Início -->
+		<header class="cabecalho">
+			<a href="index.html"><img src="imagens/logosfmenu.png" width="80" height="40"></a>
+			<nav>
+				<input type="checkbox" id="menuToggle">
+				<label for="menuToggle" class="menu-icon">
+					<i class="fa fa-bars"></i>
+					<i class="fa fa-times-circle"></i>
+				</label>
+				<ul class="menu">
+					<li class="separadores">|</li>
+					<li><a href="perfil.html" class="text-white">Perfil</a></li>
+					<li class="separadores">|</li>
+					<li><a href="projetos.html" class="text-white">Projetos</a></li>
+					<li class="separadores">|</li>
+					<li><a href="experiencia.html" class="text-white">Experiência</a></li>
+					<li class="separadores">|</li>
+					<li><a href="repgithub.html" class="text-white">Repositórios HitHub</a></li>
+					<li class="separadores">|</li>
+					<li><a href="conteudo.html" class="text-white">Conteúdo</a></li>
+					<li class="separadores">|</li>
+				</ul>
+			</nav>
+			<form action="https://www.google.com/webhp?hl=pt-BR&sa=X&ved=0ahUKEwjQp92lh6LzAhWJJbkGHf3uAzMQPAgI" target="_blank" method="submit" class="buscaMenu">
+					<input type="text" name="search" placeholder="Pesquisa" required>
+					<button type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+</svg></button>
+				</form>
+		</header>
+    	<!-- Barra de Menu - Fim -->
+		
+		<!-- Conteúdo Repositórios GitHub - Início -->
+		<section class="repoGit">
+			<div class="container pt-5 pb-2">
+					<div class="row">
+
+						<h2 id="pgrepgithub">Repositórios GitHub</h2>
+
+						<div class="col-md-3 col-lg-3 col-xl-3 mx-auto">
+							<h4>Vila Homestay</h4>
+							<hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
+							<p>Este repositório foi criado no primeiro semestre de 2021 para a disciplina de Trabalho Interdisciplinar II.<br>O grupo propõe uma solução para simplificar a rotina de um condomínio através de uma aplicação.</p>
+							<p><svg id="iconePasta" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-folder2" viewBox="0 0 16 16">
+	  <path d="M1 3.5A1.5 1.5 0 0 1 2.5 2h2.764c.958 0 1.76.56 2.311 1.184C7.985 3.648 8.48 4 9 4h4.5A1.5 1.5 0 0 1 15 5.5v7a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 1 12.5v-9zM2.5 3a.5.5 0 0 0-.5.5V6h12v-.5a.5.5 0 0 0-.5-.5H9c-.964 0-1.71-.629-2.174-1.154C6.374 3.334 5.82 3 5.264 3H2.5zM14 7H2v5.5a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 .5-.5V7z"/>
+	</svg><a href="https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2021-2-ti2-0924100-condominio" class="text-white" style="text-decoration: none" target="_blank">Ir para repositório</a></p>
+						</div>
+
+						<div class="col-md-3 col-lg-3 col-xl-3 mx-auto">
+							<h4>AED II</h4>
+							<hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
+							<p>Repositório de códigos da disciplina de Algoritmos e Estruturas de Dados II do curso de Engenharia de Software - PUC Minas.</p>
+							<p><svg id="iconePasta" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-folder2" viewBox="0 0 16 16">
+	  <path d="M1 3.5A1.5 1.5 0 0 1 2.5 2h2.764c.958 0 1.76.56 2.311 1.184C7.985 3.648 8.48 4 9 4h4.5A1.5 1.5 0 0 1 15 5.5v7a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 1 12.5v-9zM2.5 3a.5.5 0 0 0-.5.5V6h12v-.5a.5.5 0 0 0-.5-.5H9c-.964 0-1.71-.629-2.174-1.154C6.374 3.334 5.82 3 5.264 3H2.5zM14 7H2v5.5a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 .5-.5V7z"/>
+	</svg><a href="https://github.com/icei-pucminas/aeds2" class="text-white" style="text-decoration: none" target="_blank">Ir para repositório</a></p>
+						</div>
+
+						<div class="col-md-3 col-lg-3 col-xl-3 mx-auto">
+							<h4>Seek'n Hire</h4>
+							<hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
+							<p>Este repositório foi criado no segundo semestre de 2020 para a disciplina de Trabalho Interdisciplinar II.<br>O grupo propõe uma solução para linkar pessoas que necessitam de serviços específicos aos profissionais capacitados a realizá-los.</p>
+							<p><svg id="iconePasta" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-folder2" viewBox="0 0 16 16">
+	  <path d="M1 3.5A1.5 1.5 0 0 1 2.5 2h2.764c.958 0 1.76.56 2.311 1.184C7.985 3.648 8.48 4 9 4h4.5A1.5 1.5 0 0 1 15 5.5v7a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 1 12.5v-9zM2.5 3a.5.5 0 0 0-.5.5V6h12v-.5a.5.5 0 0 0-.5-.5H9c-.964 0-1.71-.629-2.174-1.154C6.374 3.334 5.82 3 5.264 3H2.5zM14 7H2v5.5a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 .5-.5V7z"/>
+	</svg><a href="https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2021-1-ti2-0940100-seek-n-hire" class="text-white" style="text-decoration: none" target="_blank">Ir para repositório</a></p>
+						</div>
+				</div>
+			</div>
+		</section>
+		<!-- Conteúdo Repositório GitHub - Fim -->
+		
+		 <!-- Rodapé - Início -->
+		<footer class="rodape">
+			<p>
+			© 2021, Copyright - Desenvolvimento de Interfaces Web - <a href="http://icei.pucminas.br" class="text-white" target="_blank">ICEI PUC Minas</a>
+			</p>
+			<img src="imagens/logosfmenu.png" width="80" height="40" id="logoFooter">
+		</footer>
+		<!-- Rodapé - Fim -->
+	</body>
+</html>

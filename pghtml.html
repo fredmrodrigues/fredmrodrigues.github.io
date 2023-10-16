@@ -1,0 +1,86 @@
+DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Fala Fred - HTML</title>
+		<link rel="stylesheet" href="estilos.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="https://kit.fontawesome.com/6143e2272e.js" crossorigin="anonymous"></script>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+	</head>
+	<body>
+		<!-- Barra de Menu - Início -->
+		<header class="cabecalho">
+			<a href="index.html"><img src="imagens/logosfmenu.png" width="80" height="40"></a>
+			<nav>
+				<input type="checkbox" id="menuToggle">
+				<label for="menuToggle" class="menu-icon">
+					<i class="fa fa-bars"></i>
+					<i class="fa fa-times-circle"></i>
+				</label>
+				<ul class="menu">
+					<li class="separadores">|</li>
+					<li><a href="perfil.html" class="text-white">Perfil</a></li>
+					<li class="separadores">|</li>
+					<li><a href="projetos.html" class="text-white">Projetos</a></li>
+					<li class="separadores">|</li>
+					<li><a href="experiencia.html" class="text-white">Experiência</a></li>
+					<li class="separadores">|</li>
+					<li><a href="repgithub.html" class="text-white">Repositórios HitHub</a></li>
+					<li class="separadores">|</li>
+					<li><a href="conteudo.html" class="text-white">Conteúdo</a></li>
+					<li class="separadores">|</li>
+				</ul>
+			</nav>
+			<form action="https://www.google.com/webhp?hl=pt-BR&sa=X&ved=0ahUKEwjQp92lh6LzAhWJJbkGHf3uAzMQPAgI" target="_blank" method="submit" class="buscaMenu">
+					<input type="text" name="search" placeholder="Pesquisa" required>
+					<button type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+</svg></button>
+				</form>
+		</header>
+    	<!-- Barra de Menu - Fim -->
+		
+		<!-- Conteúdo da Página: HTML - Início -->
+		<section class="container container mt-4 mb-5">
+			<h3 class="display-4 text-center" id="pghtml"> HTML: <lang="en">Hypertext Markup Language</lang> </h3>
+			<hr class="bg-dark mb-4 w-25">
+			<div class="row">
+				<p>O <strong>HTML</strong> pode ser definido como o bloco de construção principal da web. Através deste arquivo, é possível criar a estrutura do conteúdo de uma página ou aplicação web. Existem outras tecnologias que, geralmente, são utilizadas para desenvolver a aparência da página, como o CSS ou a funcionalidade/comportamento da página, como o JavaScript.</p>
+				<p>"Hipertexto" faz referência aos <i>links</i> que conectam páginas da Web entre si, seja dentro de um único site ou entre sites distintos. <em>Links</em> são um aspecto fundamental da web. Ao carregar conteúdo na Internet e vinculá-lo a páginas criadas por outras pessoas, você se torna um participante ativo na world wide web.</p>
+				<p>O HTML usa "Marcação" para anotar texto, imagem e outros conteúdos para exibição em um avegador da Web. A marcação HTML inclui "elementos" especiais denominadas <em>tags</em>.</p>
+				<p>Um elemento HTML é separado de outro texto em um documento com as <i>tags</i>, que consistem no nome do elemento entre "<code>&lt;</code>" e "<code>&gt;</code>". O nome de um elemento dentro de uma tag é insensível a maiúsculas e minúsculas. Isto é, pode ser escrito em maiúsculas, minúsculas ou ambas, embora seja de boa prática usar minúsculas.
+				<p>Os artigos abaixo podem ajudá-lo a aprender mais sobre HTML:</p>
+				<section>
+					<ul class="topicos1">
+						<li><a href="https://developer.mozilla.org/pt-BR/docs/Learn/HTML/Introduction_to_HTML" target="_blank">Introdução ao HTML</a>
+							<p>Este módulo fornece uma base de conhecimento, permitindo que você acostume-se com os conceitos e sintaxes importantes, tais como aplicar HTML para texto, como criar <em>hyperlinks</em> e como usar HTML para estruturar uma página web.</p></li>
+						<li><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding" target="_blank">Multimídia e como incorporá-la</a>
+							<p>Este módulo explora como usar HTML para incluir multimídia em sua página web, incluindo as diferentes maneiras para incluir imagens, e como incorporar vídeos, áudios e até como colocar uma página inteira em outras páginas web.</p></li>
+						<li><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables" target="_blank">Tabelas HTML</a>
+							<p>Representar dados tabulares em uma página web de maneira simples e acessível pode ser um desafio. Este módulo cobre marcação tabular básica, junto com outras funcionalidades mais complexas como legendas e sumários.</p></li>
+						<li><a href="https://developer.mozilla.org/en-US/docs/Learn/Forms" target="_blank">Formulários HTML</a>
+							<p>Formulários são partes muito importantes na Web — proporcionam muitas das funcionalidades que você precisa para interagir em páginas web. Exemplos disso são registrar-se e conectar-se, enviar comentários, comprar produtos e muito mais. Este módulo lhe permite começar a criar as partes visíveis dos formulários, ou seja, as partes que os usuários interagem.</p></li>
+						<li><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto" target="_blank">Usando HTML para resolver problemas comuns</a>
+							<p>Apresenta <i>links</i> para seções com conteúdo explicando como usar HTML para resolver problemas muito comuns, quando se cria uma página web, como trabalhar com títulos, agregar imagens ou vídeos, colocar ênfase em conteúdo ou criar um formulário básico.</p>
+						</li>
+					</ul>
+				</section>
+				<section>
+					<h2 class="documentation" id="ref">Referências</h2>
+					<p><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank">https://developer.mozilla.org/pt-BR/docs/Web/HTML</a></p>
+				</section>
+			</div>
+		</section>
+		<!-- Conteúdo da Página: HTML - Fim -->
+		
+		 <!-- Rodapé - Início -->
+		<footer class="rodape">
+			<p>
+			© 2021, Copyright - Desenvolvimento de Interfaces Web - <a href="http://icei.pucminas.br" class="text-white" target="_blank">ICEI PUC Minas</a>
+			</p>
+			<img src="imagens/logosfmenu.png" width="80" height="40" id="logoFooter">
+		</footer>
+		<!-- Rodapé - Fim -->
+	</body>
+</html>
